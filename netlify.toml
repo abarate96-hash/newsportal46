@@ -10,15 +10,5 @@
   to = "/.netlify/functions/api/:splat"
   status = 200
 
-[[redirects]]
-  from = "/admin.html"
-  to = "/admin.html"
-  status = 200
-
-[[redirects]]
-  from = "/articles/*"
-  to = "/articles/:splat"
-  status = 200
-
 [build.environment]
   NODE_VERSION = "18"
