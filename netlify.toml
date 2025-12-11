@@ -4,11 +4,7 @@
 
 [functions]
   directory = "netlify/functions"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
+  node_bundler = "esbuild"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"

@@ -1102,9 +1102,9 @@
         async function loadContent(){
             try{
                 const [newsRes, videosRes, trendingRes] = await Promise.all([
-                    fetch('http://localhost:3000/api/news'),
-                    fetch('http://localhost:3000/api/videos'),
-                    fetch('http://localhost:3000/api/trending')
+                    fetch('/api/news'),
+                    fetch('/api/videos'),
+                    fetch('/api/trending')
                 ]);
 
                 const newsData = await newsRes.json();
